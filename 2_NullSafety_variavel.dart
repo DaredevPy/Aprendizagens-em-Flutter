@@ -1,3 +1,8 @@
+String? nomeCompleto;
+// Variaveis de nivel superior NUNCA podem ser nulas
+
+
+
 void main () {
   String? nomeCompleto;
   print(nomeCompleto!.length);
