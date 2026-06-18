@@ -10,7 +10,7 @@ void main () {
   // != (diferente)
   final idade = 18;
   final TipoPet = 'Gato';
-
+  
   if (idade >=18) {
     print('Você pode tirar Habilitação');
   }
