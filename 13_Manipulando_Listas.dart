@@ -26,13 +26,13 @@ final outrosNomes = ['Juliana', 'Pedro'];
 
 // removeWhere
 // remove todos os elementos que atendem a condição 
-nomes.removeWhere(nome)
+nomes.removeWhere((nome){}
 print('Nome procurado $none');
 if (nome == 'Daniel') {
   return true;
 } else {
   return false;
-
+});
   print(nomes);
 
 //contando a quantidade de indices
@@ -47,7 +47,9 @@ print(nomes.first);
 print(nomes.last);
 
 //firstWhere
-var primeiroNome = nomes.firtWhere((nome){
+// no firtWhere, ele vai procurar o primeiro elemento que atenda a condição
+// mesmo se tiver mais de um elemento igual, ele vai retornar o primeiro que encontrar
+var primeiroNome = nomes.firtWhere((nome) 
   print('nome');
   if (nome == 'Ana Paula') {
     return true;
@@ -71,7 +73,39 @@ final repetiçoes = List.filled(10, 'Repetição');
 print(repetiçoes);
 
 /// Gerando numersos para cauculo
+/// fold é uma função que vai percorrer a lista e vai acumular um valor
 final numerosCauculo = List.generate(100, (index) => index + 1);
 var soma numerosCauculo.fold<int>(0, (previousValue, numero) => previousValue + numero);
+print(soma);
+//1 ... 100
+
+//0 + 1 = 1
+//1 + 2 = 3
+//3 + 3 = 6 .....
+
+/// Spread Operator
+final lista1 = [1, 2, 3];
+final lista2 = [0, ...lista1, 4, 5];
+print(lista2);
+
+//Collection if 
+var promocaoAtiva = true;
+var produtos = [
+  'Camiseta',
+  'Bermuda',
+  'Meia',
+  if (promocaoAtiva) 'Tênis'
+];
+print(produtos);
+
+//Collection for
+var listaInt = [1,2,3];
+var listaString = [
+  '#0',
+  for (var i in listaInt) '#$i'
+];
+print(listaString);
+
+
 
 }
