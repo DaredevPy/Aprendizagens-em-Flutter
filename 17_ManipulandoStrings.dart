@@ -77,6 +77,7 @@ for (var paciente in pacientes){
   var nomes = NomeCompleto.split(' ');
   print(nomes.last);
   print(nomes.first);
+  print('${nomes.first} ${nomes.last}'); //Interpolação de Strings
   
 }
 
